@@ -28,9 +28,15 @@
                 </span>
             </div>
         </div>
-        <div id="map"></div>
+        <div class="right vert" id="observablehq-5ca18ad4"></div>
     </div>
     <script src="main.js"></script>
+    <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/370caab89559e2b7.js?v=3";
+      const inspect = Inspector.into("#observablehq-5ca18ad4");
+      (new Runtime).module(define, name => (name === "casesGraph") && inspect());
+    </script>
 </body>
 
 </html>
