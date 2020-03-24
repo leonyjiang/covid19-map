@@ -1,0 +1,14 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div.container {
+    display: flex;
+}
+
+div.stats {
+    display: flex;
+    flex-direction: column;
+}
