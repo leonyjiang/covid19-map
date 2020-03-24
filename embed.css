@@ -30,7 +30,7 @@
     flex: 1;
 }
 
-@media (min-width: 525px) {
+@media (max-width: 525px) {
     .covid-19-container {
         flex-direction: column;
     }
