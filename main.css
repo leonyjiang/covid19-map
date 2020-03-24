@@ -17,3 +17,7 @@ body {
     font-size: 2.5em;
     font-weight: 400;
 }
+
+.covid-19-container #statsDisplay {
+    margin-left: 5em;
+}
