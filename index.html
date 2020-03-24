@@ -1,33 +1,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rhode Island COVID-19 Map</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhode Island COVID-19 Map</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="left vert">
-            <h1 class="title">Rhode Island<br>COVID-19 Tracker</h1>
-            <p>The Brown Daily Herald is tracking every case of COVID-19 in Rhode Island.</p>
-            <hr>
-            <div id="statsDisplay"></div>
-        </div>
-        <div class="right vert" id="casesGraph"></div>
-    </div>
-    <script src="main.js"></script>
-    <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-      import define from "https://api.observablehq.com/d/370caab89559e2b7@387.js?v=3";
-      (new Runtime).module(define, name => {
-        console.log(name)
-        if (document.getElementById(name)) {
-          return Inspector.into('#' + name)()
-        }
-      });
-    </script>
+  <h1 class="title">Rhode Island COVID-19 Tracker</h1>
+  <p>The Brown Daily Herald is documenting all cases of coronavirus in Rhode Island.</p>
+  <br>
+  <section class="main">
+    <div id="statsDisplay"></div>
+    <div id="casesGraph"></div>
+  </section>
+  <script src="main.js"></script>
+  <script type="module">
+    import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/370caab89559e2b7@387.js?v=3";
+    (new Runtime).module(define, name => {
+      console.log(name)
+      if (document.getElementById(name)) {
+        return Inspector.into('#' + name)()
+      }
+    });
+  </script>
 </body>
 
 </html>
