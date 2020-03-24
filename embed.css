@@ -1,0 +1,33 @@
+.covid-19-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.covid-19-container .stats {
+    display: flex;
+    align-items: center;
+    color: gray;
+    flex-direction: column;
+}
+
+.covid-19-container .stat {
+    margin: 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.covid-19-container .number {
+    font-weight: 500;
+    font-size: 3.5em;
+    color: brown;
+}
+
+.covid-19-container #statsDisplay {
+    margin-left: 5em;
+}
+
+.covid-19-container #casesGraph {
+    margin-left: 2em;
+}
