@@ -6,17 +6,21 @@
 
 .covid-19-container .stats {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     color: gray;
     flex-direction: column;
 }
 
 .covid-19-container .stat {
-    margin: 1.5em 0;
+    padding: 1.5em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.covid-19-container .stat + .stat {
+    border-top: 1px solid #f0f0f0;
 }
 
 .covid-19-container .number {
