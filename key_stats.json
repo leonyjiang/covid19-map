@@ -1,9 +1,7 @@
 {
   "positive": 132,
   "negative": 1339,
-  "pending": 181,
   "self_quarantined": 3000,
-  "deaths": 0,
   "hospitalized": 15,
-  "confirmed_brown": 2
+  "deaths": 0
 }
