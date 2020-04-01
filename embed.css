@@ -29,7 +29,7 @@
     color: brown;
 }
 
-.covid-19-container #casesGraph {
+.covid-19-container #caseMap {
     margin-left: 2em;
     flex: 1;
 }
