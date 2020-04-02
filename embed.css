@@ -1,3 +1,7 @@
+.observablehq {
+    height: 100%;
+}
+
 .covid-19-container {
     width: 100%;
     display: flex;
@@ -6,6 +10,7 @@
 
 .covid-19-container .stats {
     display: flex;
+    justify-content: space-evenly;
     align-items: stretch;
     color: gray;
     flex-direction: column;
